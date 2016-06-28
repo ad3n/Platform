@@ -62,7 +62,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
             "Ihsan\\AppBundle\\Composer\\ScriptHandler::doctrineCacheClear",
-            "Ihsan\\AppBundle\\Composer\\ScriptHandler::loadFixturesData"
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::platformSetup"
         ],
         "post-update-cmd": [
             "Ihsan\\AppBundle\\Composer\\ScriptHandler::generateSecretKey",
@@ -74,7 +74,7 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
             "Ihsan\\AppBundle\\Composer\\ScriptHandler::doctrineCacheClear",
-            "Ihsan\\AppBundle\\Composer\\ScriptHandler::loadFixturesData"
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::platformSetup"
         ]
     },
     "extra": {

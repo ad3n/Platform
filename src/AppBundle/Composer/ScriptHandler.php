@@ -89,7 +89,7 @@ class ScriptHandler extends BaseScriptHandler
         file_put_contents($configs['dist-file'], str_replace('%changeme%', sha1(__CLASS__), $parameter));
     }
 
-    public static function loadFixturesData(Event $event)
+    public static function platformSetup(Event $event)
     {
         $options = self::getOptions($event);
         $consoleDir = static::getConsoleDir($event, 'install assets');
@@ -98,7 +98,7 @@ class ScriptHandler extends BaseScriptHandler
             return;
         }
 
-        static::executeCommand($event, $consoleDir, 'platform:skeleton:setup', $options['process-timeout']);
+        static::executeCommand($event, $consoleDir, 'platform:setup', $options['process-timeout']);
     }
 
     private static function processConfig(array $config)
