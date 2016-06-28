@@ -1,0 +1,91 @@
+{
+    "name": "aden/platform",
+    "license": "proprietary",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ihsan\\": "src/"
+        },
+        "classmap": [
+            "app/AppKernel.php",
+            "app/AppCache.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=5.6.17",
+        "composer/composer": "~1.0",
+        "symfony/symfony": "3.1.*",
+        "doctrine/orm": "^2.5",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/doctrine-cache-bundle": "^1.2",
+        "symfony/swiftmailer-bundle": "^2.3",
+        "symfony/monolog-bundle": "^2.8",
+        "symfony/polyfill-apcu": "^1.0",
+        "sensio/distribution-bundle": "^5.0",
+        "sensio/framework-extra-bundle": "^3.0.2",
+        "incenteev/composer-parameter-handler": "^2.0",
+        "symfony/assetic-bundle": "~2.8",
+        "sensio/generator-bundle": "^3.0",
+        "doctrine/mongodb-odm": "~1.0",
+        "doctrine/mongodb-odm-bundle": "~3.0",
+        "nelmio/api-doc-bundle": "~2.9",
+        "willdurand/hateoas-bundle": "~1.1",
+        "jms/serializer-bundle": "~1.1",
+        "friendsofsymfony/rest-bundle": "~1.7",
+        "pagerfanta/pagerfanta": "~1.0",
+        "predis/predis": "^1.0",
+        "doctrine/doctrine-fixtures-bundle": "~2.0",
+        "symfonyid/symfonyid-admin-bundle": "~0.9",
+        "friendsofsymfony/http-cache-bundle": "~1.0",
+        "snc/redis-bundle": "2.x-dev",
+        "knplabs/knp-paginator-bundle": "~2.5@dev",
+        "knplabs/knp-menu-bundle": "~2.1@dev",
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "friendsofsymfony/jsrouting-bundle": "~2.0@dev"
+    },
+    "require-dev": {
+        "symfony/phpunit-bridge": "^3.0"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::generateSecretKey",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::doctrineCreateDatabase",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::doctrineCacheClear",
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::loadFixturesData"
+        ],
+        "post-update-cmd": [
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::generateSecretKey",
+            "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::doctrineCreateDatabase",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
+            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::doctrineCacheClear",
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::loadFixturesData"
+        ]
+    },
+    "extra": {
+        "symfony-app-dir": "app",
+        "symfony-bin-dir": "bin",
+        "symfony-var-dir": "var",
+        "symfony-web-dir": "web",
+        "symfony-tests-dir": "tests",
+        "symfony-assets-install": "relative",
+        "incenteev-parameters": {
+            "file": "app/config/parameters.yml"
+        }
+    }
+}

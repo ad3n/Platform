@@ -1,0 +1,58 @@
+{% spaceless %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Kami Tidak Mempunyai Yang Anda Cari</title>
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <link rel="stylesheet" href="{{- asset('bundles/symfonyidadmin/css/bootstrap.min.css') -}}" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            body{
+                margin-top: 100px;
+                background: url('{{ asset('bundles/app/img/indonesia.jpg') }}') no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                color : #757B86;
+            }
+
+            h3{
+                margin: 7px;
+                text-shadow: 3px 1px #333333;
+            }
+
+            .margin-top-17 {
+                margin-top: 17px;
+            }
+
+            #btn-area{
+                margin-top: 50px;
+            }
+
+            #socmed{
+                margin-top: 17px;
+            }
+
+            #socmed a{
+                text-decoration: none;
+                margin: 17px;
+            }
+
+        </style>
+    </head>
+    <body class="text-center">
+        <h3 class="text-uppercase">Halaman Tidak Ditemukan</h3>
+        <h3>Kami Tidak Mempunyai Yang Anda Cari, Silahkan Coba Lain Kali.</h3>
+        <div id="btn-area">
+            <a class="btn btn-success" href="/">Kembali Ke Halaman Depan</a>
+        </div>
+        <img src="{{ asset('bundles/app/img/logo.jpg') }}" class="img-rounded margin-top-17" />
+        <div id="socmed">
+            <a  href="https://www.facebook.com/groups/symfonian.indo" target="_blank" class="btn btn-default"><i class="fa fa-facebook"></i> Facebook Group</a>
+            <a  href="https://github.com/SymfonyId" target="_blank" class="btn btn-default"><i class="fa fa-github"></i> Github</a>
+        </div>
+    </body>
+</html>
+{% endspaceless %}

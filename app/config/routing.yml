@@ -1,0 +1,12 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+#admin:
+#    resource: '@AppBundle/Admin/'
+#    type: symfonyid
+#    prefix: /admin
+
+_symfonian_indonesia:
+    resource: '@SymfonyIdAdminBundle/Resources/config/routing.xml'
+    prefix: /admin

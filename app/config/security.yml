@@ -1,0 +1,39 @@
+security:
+    encoders:
+        FOS\UserBundle\Model\UserInterface: bcrypt
+
+    role_hierarchy:
+        ROLE_USER: ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_USER
+
+    providers:
+        fos_userbundle:
+            id: fos_user.user_provider.username
+
+    firewalls:
+        main:
+            pattern: ^/
+            form_login:
+                provider: fos_userbundle
+                login_path: fos_user_security_login
+                check_path: fos_user_security_check
+            logout:
+                path: fos_user_security_logout
+                target: /
+            anonymous:    true
+            remember_me:
+                secret:   "%secret%"
+                lifetime: 31536000 # 365 days in seconds
+                path:     /
+                domain:   ~
+
+    access_control:
+        - { path: ^/bundles*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/css*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/js*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/img*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/fonts*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/plugins*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/_wdt*, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin/login$, role: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/admin, role: [ROLE_USER, IS_AUTHENTICATED_FULLY] }
