@@ -4,15 +4,15 @@ assetic:
     filters:
         cssrewrite:
             apply_to: '\.css$'
-#        uglifyjs2:
-#            bin: /usr/local/bin/uglifyjs #change to your path
-#            apply_to: '\.js$'
-#        uglifycss:
-#            bin: /usr/local/bin/uglifycss #change to your path
-#            apply_to: '\.css$'
+        uglifyjs2:
+            bin: /usr/local/bin/uglifyjs #change to your path
+            apply_to: '\.js$'
+        uglifycss:
+            bin: /usr/local/bin/uglifycss #change to your path
+            apply_to: '\.css$'
 
 framework:
-    translator: { fallbacks: ["%locale%"] }
+    translator: { fallbacks: ['%locale%'] }
 
 knp_paginator:
     page_range: 5
@@ -22,6 +22,16 @@ knp_paginator:
         sort_direction_name: direction
         distinct: true
 
+doctrine_mongodb:
+    connections:
+        default:
+            server: '%mongodb_server%'
+            options: {}
+    default_database: '%database_name%'
+    document_managers:
+        default:
+            auto_mapping: true
+
 knp_menu:
     twig:
         template: knp_menu.html.twig
@@ -29,22 +39,22 @@ knp_menu:
     default_renderer: twig
 
 fos_user:
-    db_driver: orm
+    db_driver: '%user_driver%'
     firewall_name: main
-    user_class: 'Ihsan\AppBundle\Entity\User'
+    user_class: '%user_class%'
 
 snc_redis:
     clients:
         default:
             type: predis
             alias: default
-            dsn: 'redis://localhost'
+            dsn: '%redis_server%'
     session:
-        prefix: 'SymfonyIdAdminSKeleton' #change this prefix
+        prefix: '%redis_prefix%' #change this prefix
         client: default
 
 symfonyid_admin:
-    app_title: 'SYMFONYID ADMIN BUNDLE'
+    app_title: 'IHSAN PLATFORM'
     app_short_title: 'SIAB'
     per_page: 10
     identifier: 'id'
@@ -64,7 +74,7 @@ symfonyid_admin:
         thousand_separator: '.'
     user:
         form_class: 'symfonyid.admin.form.user_form'
-        model_class: 'AppBundle\Entity\User'
+        model_class: '%user_class%'
         auto_enable: true
         show_fields: ['fullName', 'username', 'email', 'roles', 'enabled']
         grid_columns: ['fullName', 'username', 'email', 'roles', 'enabled']

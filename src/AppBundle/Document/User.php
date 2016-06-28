@@ -9,23 +9,20 @@
  * file that was distributed with this source code.
  */
 
-namespace Ihsan\AppBundle\Entity;
+namespace Ihsan\AppBundle\Document;
 
-use Doctrine\ORM\Mapping as ORM;
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
 use SymfonyId\AdminBundle\User\AdvancedUser as BaseUser;
 
 /**
- * @ORM\Entity()
- * @ORM\Table(name="user")
+ * @MongoDB\Document
  *
  * @author Muhammad Surya Ihsanuddin <surya.kejawen@gmail.com>
  */
 class User extends BaseUser
 {
     /**
-     * @ORM\Id
-     * @ORM\Column(name="id", type="integer")
-     * @ORM\GeneratedValue(strategy="AUTO")
+     * @MongoDB\Id
      */
     protected $id;
 

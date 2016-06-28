@@ -37,6 +37,9 @@ class AppKernel extends Kernel
             //Data Initialization
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
 
+            //MongoDB Document Management
+            new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
+
             //CRUD Management
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),

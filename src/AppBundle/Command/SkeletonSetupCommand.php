@@ -12,6 +12,7 @@
 namespace Ihsan\AppBundle\Command;
 
 use Ihsan\AppBundle\DataFixtures\ORM\LoadUserData as Fixtures;
+use Ihsan\AppBundle\Entity\User;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\ArrayInput;
 use Symfony\Component\Console\Input\InputInterface;
@@ -41,7 +42,7 @@ class SkeletonSetupCommand extends ContainerAwareCommand
         $createSchema->run(new ArrayInput(array('--force' => true)), $output);
 
         $userManager = $this->getContainer()->get('fos_user.user_manager');
-        if (!$userManager->findUserByUsername(Fixtures::DEFAULT_USER)) {
+        if (!$userManager->findUserByUsername(Fixtures::DEFAULT_USER) && User::class === $this->getContainer()->getParameter('user_class')) {
             $loadFixtures->run($input, $output);
         }
 

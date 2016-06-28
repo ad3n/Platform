@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the SymfonyIdSkeleton package.
+ * This file is part of the Platform package.
  *
  * (c) Muhammad Surya Ihsanuddin <surya.kejawen@gmail.com>
  *
