@@ -27,7 +27,7 @@ class SkeletonSetupCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this
-            ->setName('platform:skeleton:setup')
+            ->setName('platform:setup')
             ->setDescription('Ihsan Platform Setup')
         ;
     }
