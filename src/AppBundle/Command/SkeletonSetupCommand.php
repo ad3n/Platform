@@ -49,7 +49,7 @@ class SkeletonSetupCommand extends ContainerAwareCommand
         $installAssets->run(new ArrayInput(array('--relative' => true)), $output);
         $dumpJsRouting->run($input, $output);
 
-        $output->writeln('<info>SIAB Skeleton sudah siap digunakan...</info>');
+        $output->writeln('<info>Platform sudah siap digunakan...</info>');
         $output->writeln('<info>Jalankan: php bin/console server:run</info>');
         $output->writeln('<info>Username dan password: siab</info>');
         $output->writeln('<info>localhost:8000/admin</info>');
