@@ -2,6 +2,7 @@
 
 namespace Ihsan\AppBundle\Controller;
 
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Cache;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
@@ -10,6 +11,7 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="homepage")
+     * @Cache(expires="tomorrow", smaxage="17", public=true)
      */
     public function indexAction(Request $request)
     {
