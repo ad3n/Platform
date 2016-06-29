@@ -43,6 +43,12 @@ fos_user:
     firewall_name: main
     user_class: '%user_class%'
 
+fos_elastica:
+    clients:
+        default: { host: '%elasticsearch_server%', port: '%elasticsearch_port%' }
+    indexes:
+        platform: ~
+
 snc_redis:
     clients:
         default:
@@ -54,12 +60,12 @@ snc_redis:
         client: default
 
 symfonyid_admin:
-    app_title: 'IHSAN PLATFORM'
-    app_short_title: 'SIAB'
-    per_page: 10
+    app_title: '%app_title%'
+    app_short_title: '%app_title_short%'
+    per_page: '%record_per_page%'
     identifier: 'id'
-    max_records: 1000
-    date_time_format: 'd-m-Y'
+    max_records: '%record_max%'
+    date_time_format: '%date_format%'
     menu:
         name: 'symfonyid_menu'
         loader: 'symfonyid.admin.menu.default_menu_loader'

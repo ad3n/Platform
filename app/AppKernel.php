@@ -40,6 +40,9 @@ class AppKernel extends Kernel
             //MongoDB Document Management
             new Doctrine\Bundle\MongoDBBundle\DoctrineMongoDBBundle(),
 
+            //Elastic Search
+            new FOS\ElasticaBundle\FOSElasticaBundle(),
+
             //CRUD Management
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),

@@ -39,12 +39,13 @@
         "pagerfanta/pagerfanta": "~1.0",
         "predis/predis": "^1.0",
         "doctrine/doctrine-fixtures-bundle": "~2.0",
-        "symfonyid/symfonyid-admin-bundle": "~0.9",
+        "symfonyid/symfonyid-admin-bundle": "~0.15",
         "friendsofsymfony/http-cache-bundle": "~1.0",
         "snc/redis-bundle": "2.x-dev",
         "knplabs/knp-paginator-bundle": "~2.5@dev",
         "knplabs/knp-menu-bundle": "~2.1@dev",
         "friendsofsymfony/user-bundle": "~2.0@dev",
+        "friendsofsymfony/elastica-bundle": "~3.1@dev",
         "friendsofsymfony/jsrouting-bundle": "~2.0@dev"
     },
     "require-dev": {

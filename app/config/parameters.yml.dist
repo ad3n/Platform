@@ -18,9 +18,20 @@ parameters:
     redis_server: 'redis://localhost:6379'
     redis_prefix: 'platform'
 
+    #Elastic Search
+    elasticsearch_server: 'localhost'
+    elasticsearch_port: 9200
+
     #FosUser
     user_driver: 'orm'
     user_class: 'Ihsan\AppBundle\Entity\User'
+
+    #SymfonyIdAdmin
+    app_title: 'IHSAN PLATFORM'
+    app_title_short: 'IP'
+    record_per_page: 17
+    record_max: 1000
+    date_format: 'd-m-Y'
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
