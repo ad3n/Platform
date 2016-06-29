@@ -11,7 +11,7 @@ class DefaultController extends Controller
 {
     /**
      * @Route("/", name="homepage")
-     * @Cache(expires="tomorrow", smaxage="17", public=true)
+     * @Cache(expires="tomorrow", public=true)
      */
     public function indexAction(Request $request)
     {
