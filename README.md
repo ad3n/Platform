@@ -17,4 +17,6 @@ Platform
 
 > + Cache Management
 
+> + Elastic Search
+
 Semua telah dikonfigurasi sehingga Anda tinggal install dan semua dapat langsung dipakai
