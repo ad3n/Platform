@@ -1,3 +1,7 @@
+imports:
+    - { resource: elasticsearch.yml }
+    - { resource: queue.yml }
+
 assetic:
     bundles: ['AppBundle', 'SymfonyIdAdminBundle', 'FOSUserBundle']
     node: '/usr/bin/nodejs' #change to your path
@@ -42,12 +46,6 @@ fos_user:
     db_driver: '%user_driver%'
     firewall_name: main
     user_class: '%user_class%'
-
-fos_elastica:
-    clients:
-        default: { host: '%elasticsearch_server%', port: '%elasticsearch_port%' }
-    indexes:
-        platform: ~
 
 snc_redis:
     clients:

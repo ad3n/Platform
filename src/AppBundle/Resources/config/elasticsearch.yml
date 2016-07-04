@@ -1,0 +1,5 @@
+fos_elastica:
+    clients:
+        default: { host: '%elasticsearch_server%', port: '%elasticsearch_port%' }
+    indexes:
+        platform: ~

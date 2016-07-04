@@ -43,6 +43,9 @@ class AppKernel extends Kernel
             //Elastic Search
             new FOS\ElasticaBundle\FOSElasticaBundle(),
 
+            //Messaging
+            new OldSound\RabbitMqBundle\OldSoundRabbitMqBundle(),
+
             //CRUD Management
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),

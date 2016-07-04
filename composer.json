@@ -46,7 +46,8 @@
         "knplabs/knp-menu-bundle": "~2.1@dev",
         "friendsofsymfony/user-bundle": "~2.0@dev",
         "friendsofsymfony/elastica-bundle": "~3.1@dev",
-        "friendsofsymfony/jsrouting-bundle": "~2.0@dev"
+        "friendsofsymfony/jsrouting-bundle": "~2.0@dev",
+        "php-amqplib/rabbitmq-bundle": "^1.10"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^3.0",
