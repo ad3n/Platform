@@ -19,4 +19,6 @@ Platform
 
 > + Elastic Search
 
+> + RabbitMQ
+
 Semua telah dikonfigurasi sehingga Anda tinggal install dan semua dapat langsung dipakai
