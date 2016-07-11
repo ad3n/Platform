@@ -4193,16 +4193,16 @@
         },
         {
             "name": "symfonyid/symfonyid-admin-bundle",
-            "version": "0.21",
+            "version": "0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/SymfonyIdAdminBundle.git",
-                "reference": "1c779b305c473e846962c9d9c95d88c036ede984"
+                "reference": "701d50de59989383d422a156e653f32cb20fe1d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/SymfonyIdAdminBundle/zipball/1c779b305c473e846962c9d9c95d88c036ede984",
-                "reference": "1c779b305c473e846962c9d9c95d88c036ede984",
+                "url": "https://api.github.com/repos/SymfonyId/SymfonyIdAdminBundle/zipball/701d50de59989383d422a156e653f32cb20fe1d2",
+                "reference": "701d50de59989383d422a156e653f32cb20fe1d2",
                 "shasum": ""
             },
             "require": {
@@ -4276,7 +4276,7 @@
                 "symfony admin",
                 "symfony3"
             ],
-            "time": "2016-07-11 09:32:09"
+            "time": "2016-07-11 10:33:26"
         },
         {
             "name": "twbs/bootstrap",
