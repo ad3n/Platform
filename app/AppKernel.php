@@ -20,6 +20,7 @@ class AppKernel extends Kernel
             //Asset Management
             new Symfony\Bundle\AsseticBundle\AsseticBundle(),
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
+            new Mopa\Bundle\BootstrapBundle\MopaBootstrapBundle(),
 
             //User Management
             new FOS\UserBundle\FOSUserBundle(),

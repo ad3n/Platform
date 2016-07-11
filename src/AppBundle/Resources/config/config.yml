@@ -1,11 +1,18 @@
 imports:
     - { resource: elasticsearch.yml }
     - { resource: queue.yml }
+    - { resource: bootstrap.yml }
+    - { resource: admin.yml }
+    - { resource: redis.yml }
 
 assetic:
     bundles: ['AppBundle', 'SymfonyIdAdminBundle', 'FOSUserBundle']
     node: '/usr/bin/nodejs' #change to your path
     filters:
+        less:
+            node: /usr/local/bin/node #change to your path
+            node_paths: [/usr/local/lib/node_modules] #change to your path
+            apply_to: '\.less$'
         cssrewrite:
             apply_to: '\.css$'
         uglifyjs2:
@@ -46,53 +53,3 @@ fos_user:
     db_driver: '%user_driver%'
     firewall_name: main
     user_class: '%user_class%'
-
-snc_redis:
-    clients:
-        default:
-            type: predis
-            alias: default
-            dsn: '%redis_server%'
-    session:
-        prefix: '%redis_prefix%' #change this prefix
-        client: default
-
-symfonyid_admin:
-    app_title: '%app_title%'
-    app_short_title: '%app_title_short%'
-    per_page: '%record_per_page%'
-    identifier: 'id'
-    max_records: '%record_max%'
-    date_time_format: '%date_format%'
-    menu:
-        name: 'symfonyid_menu'
-        loader: 'symfonyid.admin.menu.default_menu_loader'
-        path: '@AppBundle/Resources/config/menu.yml'
-    upload_dir: 'uploads'
-    driver: 'orm' #odm or both
-    translation_domain: 'AppBundle'
-    filters: ['name']
-    number_format:
-        decimal_precision: 0
-        decimal_separator: ','
-        thousand_separator: '.'
-    user:
-        form_class: 'symfonyid.admin.form.user_form'
-        model_class: '%user_class%'
-        auto_enable: true
-        show_fields: ['fullName', 'username', 'email', 'roles', 'enabled']
-        grid_columns: ['fullName', 'username', 'email', 'roles', 'enabled']
-        profile_fields: ['fullName', 'username', 'email', 'roles', 'enabled']
-        filters: ['fullName', 'username']
-        password_form: 'symfonyid.admin.form.change_password_form'
-    themes:
-        dashboard: 'SymfonyIdAdminBundle:Index:index.html.twig'
-        profile: 'SymfonyIdAdminBundle:Index:profile.html.twig'
-        change_password: 'SymfonyIdAdminBundle:Index:change_password.html.twig'
-        form_theme: 'SymfonyIdAdminBundle:Form:fields.html.twig'
-        new_view: 'SymfonyIdAdminBundle:Crud:new.html.twig'
-        bulk_new_view: 'SymfonyIdAdminBundle:Crud:bulk-new.html.twig'
-        edit_view: 'SymfonyIdAdminBundle:Crud:new.html.twig'
-        show_view: 'SymfonyIdAdminBundle:Crud:show.html.twig'
-        list_view: 'SymfonyIdAdminBundle:Crud:list.html.twig'
-        pagination: 'SymfonyIdAdminBundle:Layout:pagination.html.twig'

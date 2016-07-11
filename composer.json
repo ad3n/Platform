@@ -64,7 +64,8 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
             "Ihsan\\AppBundle\\Composer\\ScriptHandler::doctrineCacheClear",
-            "Ihsan\\AppBundle\\Composer\\ScriptHandler::platformSetup"
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::platformSetup",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ],
         "post-update-cmd": [
             "Ihsan\\AppBundle\\Composer\\ScriptHandler::generateSecretKey",
@@ -76,7 +77,8 @@
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget",
             "Ihsan\\AppBundle\\Composer\\ScriptHandler::doctrineCacheClear",
-            "Ihsan\\AppBundle\\Composer\\ScriptHandler::platformSetup"
+            "Ihsan\\AppBundle\\Composer\\ScriptHandler::platformSetup",
+            "Mopa\\Bundle\\BootstrapBundle\\Composer\\ScriptHandler::postInstallSymlinkTwitterBootstrap"
         ]
     },
     "extra": {
