@@ -51,6 +51,7 @@
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^3.0",
+        "codeception/codeception": "^2.2",
         "phpunit/phpunit": "^5.3"
     },
     "scripts": {
