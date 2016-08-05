@@ -6,10 +6,3 @@ services:
             - '@logger'
         tags:
             - { name: kernel.event_listener, event: kernel.exception }
-
-    app.profiler.super_admin_matcher:
-        class: Ihsan\AppBundle\Profiler\SuperAdminMatcher
-        arguments:
-            - '@security.authorization_checker'
-            - '@kernel'
-        public: false

@@ -24,9 +24,6 @@ assetic:
 
 framework:
     translator: { fallbacks: ['%locale%'] }
-    profiler:
-        matcher:
-            service: app.profiler.super_admin_matcher
 
 knp_paginator:
     page_range: 5

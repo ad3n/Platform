@@ -39,7 +39,7 @@
         "pagerfanta/pagerfanta": "~1.0",
         "predis/predis": "^1.0",
         "doctrine/doctrine-fixtures-bundle": "~2.0",
-        "symfonyid/symfonyid-admin-bundle": "~0.15",
+        "symfonyid/symfonyid-admin-bundle": "^1.0",
         "friendsofsymfony/http-cache-bundle": "~1.0",
         "snc/redis-bundle": "2.x-dev",
         "knplabs/knp-paginator-bundle": "~2.5@dev",
