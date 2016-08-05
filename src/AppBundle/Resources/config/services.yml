@@ -1,5 +1,5 @@
 services:
-    app.exception_listener:
+    app.listener.exception_listener:
         class: Ihsan\AppBundle\EventListener\ExceptionListener
         arguments:
             - '@kernel'
