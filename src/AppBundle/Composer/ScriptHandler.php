@@ -86,7 +86,7 @@ class ScriptHandler extends BaseScriptHandler
 
         $parameter = file_get_contents($configs['dist-file']);
 
-        file_put_contents($configs['dist-file'], str_replace('%changeme%', sha1(__CLASS__), $parameter));
+        file_put_contents($configs['dist-file'], str_replace('%changeme%', sha1(date('YmdHis')), $parameter));
     }
 
     public static function platformSetup(Event $event)
