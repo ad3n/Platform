@@ -6,4 +6,4 @@ Feature: Show Homepage
     @javascript
     Scenario: Show Homepage
         Given I am on "/"
-        Then I see "Welcome"
+        Then I should see "Welcome"
