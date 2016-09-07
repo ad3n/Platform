@@ -47,6 +47,9 @@ class AppKernel extends Kernel
             //Messaging
             new OldSound\RabbitMqBundle\OldSoundRabbitMqBundle(),
 
+            //Form Flow
+            new Craue\FormFlowBundle\CraueFormFlowBundle(),
+
             //CRUD Management
             new Knp\Bundle\PaginatorBundle\KnpPaginatorBundle(),
             new Knp\Bundle\MenuBundle\KnpMenuBundle(),
