@@ -33,6 +33,12 @@ parameters:
     user_driver: 'orm'
     user_class: 'Ihsan\AppBundle\Entity\User'
 
+    #Assetic
+    assetic_uglifyjs_path: '/usr/local/bin/uglifyjs'
+    assetic_uglifycss_path: '/usr/local/bin/uglifycss'
+    assetic_jpegoptim_path: '/usr/bin/jpegoptim'
+    assetic_optipng_path: '/usr/bin/optipng'
+
     #SymfonyIdAdmin
     app_title: 'IHSAN PLATFORM'
     app_title_short: 'IP'

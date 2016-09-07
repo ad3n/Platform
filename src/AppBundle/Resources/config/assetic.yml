@@ -1,0 +1,17 @@
+assetic:
+    bundles: ['AppBundle', 'SymfonyIdAdminBundle', 'FOSUserBundle']
+    filters:
+        cssrewrite:
+            apply_to: '\.css$'
+        uglifyjs2:
+            bin: /usr/local/bin/uglifyjs
+            apply_to: '\.js$'
+        uglifycss:
+            bin: /usr/local/bin/uglifycss
+            apply_to: '\.css$'
+        jpegoptim:
+            bin: /usr/bin/jpegoptim
+            apply_to: '\.jpg$'
+        optipng:
+            bin: /usr/bin/optipng
+            apply_to: '\.png$'
