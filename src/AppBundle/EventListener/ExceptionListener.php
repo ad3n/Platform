@@ -12,12 +12,14 @@
 namespace Ihsan\AppBundle\EventListener;
 
 use Psr\Log\LoggerInterface;
+use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseForExceptionEvent;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
+use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\HttpKernel\KernelInterface;
 
-class ExceptionListener
+class ExceptionListener implements EventSubscriberInterface
 {
     /**
      * @var KernelInterface
@@ -56,5 +58,14 @@ class ExceptionListener
         }
 
         $event->setResponse($response);
+    }
+
+    public static function getSubscribedEvents()
+    {
+        return array(
+            KernelEvents::EXCEPTION => array(
+                array('onKernelException', 0),
+            ),
+        );
     }
 }

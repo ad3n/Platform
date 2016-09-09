@@ -5,4 +5,4 @@ services:
             - '@kernel'
             - '@logger'
         tags:
-            - { name: kernel.event_listener, event: kernel.exception }
+            - { name: kernel.event_subscriber }
