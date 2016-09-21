@@ -37,3 +37,15 @@ fos_user:
     db_driver: '%user_driver%'
     firewall_name: main
     user_class: '%user_class%'
+
+fos_rest:
+    format_listener:
+        enabled: true
+        rules:
+            - { path: '^/', priorities: ['json', 'xml'], fallback_format: 'json' }
+    routing_loader:
+        default_format: json
+    view:
+        view_response_listener: 'force'
+    serializer:
+        serialize_null: true
