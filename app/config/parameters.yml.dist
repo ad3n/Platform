@@ -52,4 +52,4 @@ parameters:
     mailer_password:   ~
 
     # A secret key that's used to generate certain security-related tokens
-    secret:            '%changeme%'
+    secret:            'c852502072843ef2b3059deb424ba42ecaf87538'
