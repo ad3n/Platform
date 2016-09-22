@@ -11,19 +11,19 @@ snc_redis:
         metadata_cache:
             client: default
             entity_manager: default
-            namespace: "dmc:"
+            namespace: '%redis_prefix%{dmc}:'
         query_cache:
             client: default
             entity_manager: default
-            namespace: "dqc:"
+            namespace: '%redis_prefix%{dqc}:'
         result_cache:
             client: default
             entity_manager: default
-            namespace: "drc:"
+            namespace: '%redis_prefix%{drc}:'
         second_level_cache:
             client: default
             entity_manager: default
-            namespace: 'dslc:'
+            namespace: '%redis_prefix%{dslc}:'
 
 doctrine:
     orm:
