@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c9755a3ddabd58d3dba48f93f6687938",
-    "content-hash": "cf844b2ac06f98ab1bdfa18cd8e6accf",
+    "hash": "7b3c5dc7f8c2198c99dfbdb385ee43c1",
+    "content-hash": "ef5d199237743a51aabef9265b9a4bca",
     "packages": [
         {
             "name": "craue/formflow-bundle",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/craue/CraueFormFlowBundle.git",
-                "reference": "db8e95db03ef6e1cfbf857973df7c19eb5259dff"
+                "reference": "5abde22c5f2c537e7fce4c0dd860798f7c6c151f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/db8e95db03ef6e1cfbf857973df7c19eb5259dff",
-                "reference": "db8e95db03ef6e1cfbf857973df7c19eb5259dff",
+                "url": "https://api.github.com/repos/craue/CraueFormFlowBundle/zipball/5abde22c5f2c537e7fce4c0dd860798f7c6c151f",
+                "reference": "5abde22c5f2c537e7fce4c0dd860798f7c6c151f",
                 "shasum": ""
             },
             "require": {
@@ -69,7 +69,7 @@
                 "symfony3",
                 "wizard"
             ],
-            "time": "2016-09-19 15:47:11"
+            "time": "2016-09-20 08:25:56"
         },
         {
             "name": "doctrine/annotations",
@@ -1458,12 +1458,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSUserBundle.git",
-                "reference": "4cb7a29869e4a9bef4f51986d48b1a3af76d3f48"
+                "reference": "7abb0ff366c404f2c2b34fd264693071148351a2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/4cb7a29869e4a9bef4f51986d48b1a3af76d3f48",
-                "reference": "4cb7a29869e4a9bef4f51986d48b1a3af76d3f48",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSUserBundle/zipball/7abb0ff366c404f2c2b34fd264693071148351a2",
+                "reference": "7abb0ff366c404f2c2b34fd264693071148351a2",
                 "shasum": ""
             },
             "require": {
@@ -1497,7 +1497,10 @@
             "autoload": {
                 "psr-4": {
                     "FOS\\UserBundle\\": ""
-                }
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -1522,7 +1525,7 @@
             "keywords": [
                 "User management"
             ],
-            "time": "2016-09-12 15:04:02"
+            "time": "2016-09-26 07:23:44"
         },
         {
             "name": "guzzle/guzzle",
@@ -2022,16 +2025,16 @@
         },
         {
             "name": "knplabs/knp-menu",
-            "version": "v2.1.1",
+            "version": "2.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenu.git",
-                "reference": "9917b999a3c3d3901386d60c4888b07679291031"
+                "reference": "964b5b3ca7fd23019147991f4f75f361d061eb20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/9917b999a3c3d3901386d60c4888b07679291031",
-                "reference": "9917b999a3c3d3901386d60c4888b07679291031",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenu/zipball/964b5b3ca7fd23019147991f4f75f361d061eb20",
+                "reference": "964b5b3ca7fd23019147991f4f75f361d061eb20",
                 "shasum": ""
             },
             "require": {
@@ -2052,7 +2055,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1-dev"
+                    "dev-master": "2.2-dev"
                 }
             },
             "autoload": {
@@ -2084,7 +2087,7 @@
                 "menu",
                 "tree"
             ],
-            "time": "2016-01-08 15:42:54"
+            "time": "2016-09-22 07:36:19"
         },
         {
             "name": "knplabs/knp-menu-bundle",
@@ -2092,16 +2095,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/KnpLabs/KnpMenuBundle.git",
-                "reference": "42ff1953c3a79d0b31aba2ece8c03fbd70e7f1ca"
+                "reference": "0e4af7209dc03e39c51ec70b68ab2ba3177c25de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/42ff1953c3a79d0b31aba2ece8c03fbd70e7f1ca",
-                "reference": "42ff1953c3a79d0b31aba2ece8c03fbd70e7f1ca",
+                "url": "https://api.github.com/repos/KnpLabs/KnpMenuBundle/zipball/0e4af7209dc03e39c51ec70b68ab2ba3177c25de",
+                "reference": "0e4af7209dc03e39c51ec70b68ab2ba3177c25de",
                 "shasum": ""
             },
             "require": {
-                "knplabs/knp-menu": "~2.1",
+                "knplabs/knp-menu": "~2.2",
                 "symfony/framework-bundle": "~2.3|~3.0"
             },
             "require-dev": {
@@ -2111,7 +2114,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.1.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -2129,7 +2132,7 @@
                     "email": "stof@notk.org"
                 },
                 {
-                    "name": "KnpLabs",
+                    "name": "Knplabs",
                     "homepage": "http://knplabs.com"
                 },
                 {
@@ -2141,7 +2144,7 @@
             "keywords": [
                 "menu"
             ],
-            "time": "2016-06-21 06:53:03"
+            "time": "2016-09-22 12:24:40"
         },
         {
             "name": "knplabs/knp-paginator-bundle",
@@ -3378,16 +3381,16 @@
         },
         {
             "name": "snc/redis-bundle",
-            "version": "dev-master",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/snc/SncRedisBundle.git",
-                "reference": "c90589e5b68aa2fb82a6884957656175d8289c16"
+                "reference": "b8aa1a966b32c4fba6b7dac4532d5eeb1d890afb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/c90589e5b68aa2fb82a6884957656175d8289c16",
-                "reference": "c90589e5b68aa2fb82a6884957656175d8289c16",
+                "url": "https://api.github.com/repos/snc/SncRedisBundle/zipball/b8aa1a966b32c4fba6b7dac4532d5eeb1d890afb",
+                "reference": "b8aa1a966b32c4fba6b7dac4532d5eeb1d890afb",
                 "shasum": ""
             },
             "require": {
@@ -3439,7 +3442,7 @@
                 "redis",
                 "symfony"
             ],
-            "time": "2016-09-16 15:25:46"
+            "time": "2016-06-17 11:50:26"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -4160,16 +4163,16 @@
         },
         {
             "name": "symfonyid/symfonyid-admin-bundle",
-            "version": "1.2.15",
+            "version": "1.3.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/SymfonyId/SymfonyIdAdminBundle.git",
-                "reference": "80380dbcf8b42a472334db2b4cad6f315822e15b"
+                "reference": "4899d0c441aa8c0cce27b1c1c241914e0a90f6d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SymfonyId/SymfonyIdAdminBundle/zipball/80380dbcf8b42a472334db2b4cad6f315822e15b",
-                "reference": "80380dbcf8b42a472334db2b4cad6f315822e15b",
+                "url": "https://api.github.com/repos/SymfonyId/SymfonyIdAdminBundle/zipball/4899d0c441aa8c0cce27b1c1c241914e0a90f6d3",
+                "reference": "4899d0c441aa8c0cce27b1c1c241914e0a90f6d3",
                 "shasum": ""
             },
             "require": {
@@ -4244,7 +4247,7 @@
                 "symfony admin",
                 "symfony3"
             ],
-            "time": "2016-09-19 06:52:54"
+            "time": "2016-09-21 12:41:54"
         },
         {
             "name": "twbs/bootstrap",
@@ -4299,16 +4302,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.2",
+            "version": "v1.25.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7"
+                "reference": "f16a634ab08d87e520da5671ec52153d627f10f6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
-                "reference": "33093f6e310e6976baeac7b14f3a6ec02f2d79b7",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/f16a634ab08d87e520da5671ec52153d627f10f6",
+                "reference": "f16a634ab08d87e520da5671ec52153d627f10f6",
                 "shasum": ""
             },
             "require": {
@@ -4321,7 +4324,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.24-dev"
+                    "dev-master": "1.25-dev"
                 }
             },
             "autoload": {
@@ -4356,7 +4359,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-09-01 17:50:53"
+            "time": "2016-09-21 23:05:12"
         },
         {
             "name": "willdurand/hateoas",
@@ -4569,34 +4572,35 @@
     "packages-dev": [
         {
             "name": "behat/behat",
-            "version": "v3.1.0",
+            "version": "v3.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Behat.git",
-                "reference": "359d987b3064d78f2d3a6ba3a355277f3b09b47f"
+                "reference": "df7d9225e9ee37fdaa54273e3e0aecf2515bbe76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/359d987b3064d78f2d3a6ba3a355277f3b09b47f",
-                "reference": "359d987b3064d78f2d3a6ba3a355277f3b09b47f",
+                "url": "https://api.github.com/repos/Behat/Behat/zipball/df7d9225e9ee37fdaa54273e3e0aecf2515bbe76",
+                "reference": "df7d9225e9ee37fdaa54273e3e0aecf2515bbe76",
                 "shasum": ""
             },
             "require": {
-                "behat/gherkin": "~4.4",
+                "behat/gherkin": "^4.4.4",
                 "behat/transliterator": "~1.0",
                 "ext-mbstring": "*",
                 "php": ">=5.3.3",
-                "symfony/class-loader": "~2.1|~3.0",
-                "symfony/config": "~2.3|~3.0",
-                "symfony/console": "~2.1|~3.0",
-                "symfony/dependency-injection": "~2.1|~3.0",
-                "symfony/event-dispatcher": "~2.1|~3.0",
-                "symfony/translation": "~2.3|~3.0",
-                "symfony/yaml": "~2.1|~3.0"
+                "symfony/class-loader": "~2.1||~3.0",
+                "symfony/config": "~2.3||~3.0",
+                "symfony/console": "~2.5||~3.0",
+                "symfony/dependency-injection": "~2.1||~3.0",
+                "symfony/event-dispatcher": "~2.1||~3.0",
+                "symfony/translation": "~2.3||~3.0",
+                "symfony/yaml": "~2.1||~3.0"
             },
             "require-dev": {
+                "herrera-io/box": "~1.6.1",
                 "phpunit/phpunit": "~4.5",
-                "symfony/process": "~2.1|~3.0"
+                "symfony/process": "~2.5|~3.0"
             },
             "suggest": {
                 "behat/mink-extension": "for integration with Mink testing framework",
@@ -4609,7 +4613,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.1.x-dev"
+                    "dev-master": "3.2.x-dev"
                 }
             },
             "autoload": {
@@ -4645,7 +4649,7 @@
                 "symfony",
                 "testing"
             ],
-            "time": "2016-03-28 07:04:45"
+            "time": "2016-09-25 09:40:39"
         },
         {
             "name": "behat/gherkin",
@@ -5925,24 +5929,24 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "5.5.4",
+            "version": "5.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3e6e88e56c912133de6e99b87728cca7ed70c5f5"
+                "reference": "a57126dc681b08289fef6ac96a48e30656f84350"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3e6e88e56c912133de6e99b87728cca7ed70c5f5",
-                "reference": "3e6e88e56c912133de6e99b87728cca7ed70c5f5",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a57126dc681b08289fef6ac96a48e30656f84350",
+                "reference": "a57126dc681b08289fef6ac96a48e30656f84350",
                 "shasum": ""
             },
             "require": {
                 "ext-dom": "*",
                 "ext-json": "*",
-                "ext-pcre": "*",
-                "ext-reflection": "*",
-                "ext-spl": "*",
+                "ext-libxml": "*",
+                "ext-mbstring": "*",
+                "ext-xml": "*",
                 "myclabs/deep-copy": "~1.3",
                 "php": "^5.6 || ^7.0",
                 "phpspec/prophecy": "^1.3.1",
@@ -5964,7 +5968,12 @@
             "conflict": {
                 "phpdocumentor/reflection-docblock": "3.0.2"
             },
+            "require-dev": {
+                "ext-pdo": "*"
+            },
             "suggest": {
+                "ext-tidy": "*",
+                "ext-xdebug": "*",
                 "phpunit/php-invoker": "~1.1"
             },
             "bin": [
@@ -5999,7 +6008,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2016-08-26 07:11:44"
+            "time": "2016-09-21 14:40:13"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -6732,7 +6741,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "snc/redis-bundle": 20,
         "knplabs/knp-paginator-bundle": 20,
         "knplabs/knp-menu-bundle": 20,
         "friendsofsymfony/user-bundle": 20,
