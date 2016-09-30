@@ -1,6 +1,6 @@
 services:
     app.listener.exception_listener:
-        class: Ihsan\AppBundle\EventListener\ExceptionListener
+        class: Ihsan\AppBundle\EventListener\ExceptionSubscriber
         arguments:
             - '@kernel'
             - '@logger'
